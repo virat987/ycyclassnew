@@ -1,0 +1,55 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css/trequest.css')
+  script(src='https://kit.fontawesome.com/c939d0e917.js')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65' crossorigin='anonymous')
+  title Teacher - Request
+.request-list-container
+  .request-list-wrapper
+    .heading
+      h3 Available Students
+    .search-section
+      .input-place
+        i.fa.fa-search(aria-hidden='true')
+        input#SearchTextValue(type='text' placeholder='Search Your Teaching Topic' style="font-size:13px;")
+      button.btn.btn-dark.search-topic-btn
+        | Search Topic
+    .topic-suggestions-container
+      .suggestions.asuggestion
+        span(onclick="updateSub(event,'Math')") Math
+      .suggestions.asuggestion
+        span(onclick="updateSub(event,'Physics')") Physics
+      .suggestions.asuggestion
+        span(onclick="updateSub(event,'Chemistry')") Chemistry
+      .suggestions.asuggestion
+        span(onclick="updateSub(event,'Biology')") Biology
+      #sexpands.suggestions.suggestion-load-btn
+        span(onclick='loadMoreSuggestions()') more..
+    .refresh-btn
+      button.btn.btn-dark(onclick='reloadRequests()')
+        i.fa.fa-refresh
+    .requests-list-container
+     each val in requests  
+        .request
+          .left-section
+            .request-image
+            .details-section
+              .request-question
+                span
+              .details
+                .list
+                  h6=val.desc
+                .list
+                  h6=val.course
+                .list
+                  h6=val.subject
+          .right-section
+            .join-btn
+              button.btn.btn-success
+                a(onclick =`"replace_history('/t/${val.url}"`) Join
+              button.btn.btn-danger(onclick=`filter_ques('${val.url}')`) Remove
+script(src='/js/trequest.js')

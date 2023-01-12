@@ -1,0 +1,41 @@
+doctype html
+head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='shortcut icon' href='img/favicon.ico' type='image/x-icon')
+    // Bootstrap CSS
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+    // icon css
+    link(rel='stylesheet' href='assets/elagent-icon/style.css')
+    link(rel='stylesheet' href='assets/animation/animate.css')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='css/style-latest.css')
+    link(rel='stylesheet' href='css/responsive.css')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous')
+    title YCY
+    
+.body_wrapper 
+    include _header
+    section.breadcrumb_area.breadcrumb_area_four
+        img.p_absolute.bl_left(src='img/v.svg' alt='')
+        img.p_absolute.bl_right(src='img/home_one/b_leaf.svg' alt='')
+        img.p_absolute.one.wow.fadeInRight(src='img/home_one/b_man_two.png' alt='')
+        
+    section.contact_area.sec_pad
+        .container
+            .section_title.text-left
+                h2.h_title.wow.fadeInUp Opps...  something went wrong ! 
+           
+            .review_info.no-teacher.p-5  
+                p  
+                    | Looks like you are a student and trying to access teacher panel.
+                    | To get access of the Teacher panel you need to upgrade as a teacher.
+                    br
+                    | Click the below button to register.
+                button.btn.btn-primary(onclick="window.location='/login'") click Here
+
+    include _footer
+    // Back to top button
+    a#back-to-top(title='Back to Top')
+include _js

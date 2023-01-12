@@ -1,0 +1,255 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.request-list-container {
+    width: 100%;
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.574); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-list-wrapper {
+    width: 80%;
+    height: 90%;
+    padding: 1% 5%;
+}
+
+.btn-success a {
+    color: white;
+    text-decoration: none;
+}
+
+.request-list-wrapper .search-section {
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-section .input-place {
+    width: 75%;
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.input-place input {
+    width: 100%;
+    border: hidden;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.search-section .search-topic-btn {
+    width: 20%;
+    border-radius: 25px;
+}
+
+/* suggestion section  */
+.topic-suggestions-container {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asuggestionse {
+    background: black;
+    color: wheat;
+}
+
+.topic-suggestions-container .suggestions {
+    border-radius: 15px;
+    padding: 2px 10px;
+    margin: 5px 10px 5px 3px;
+    border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.topic-suggestions-container .suggestions:hover {
+    background-color: gray;
+    cursor: pointer;
+    transition: 3;
+}
+
+.topic-suggestions-container .suggestions span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.topic-suggestions-container .suggestion-load-btn {
+    background: rgb(16, 16, 16);
+    color: rgb(251, 176, 37);
+}
+
+/* .topic-suggestions-container .suggestion-load-btn :hover {
+  background: rgb(200, 196, 196);
+} */
+.request-list-wrapper .refresh-btn {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.refresh-btn button {
+    height: 25px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.requests-list-container {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1000px) {
+    .request-list-wrapper {
+        width: 90%;
+        height: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .request-list-wrapper {
+        padding-top: 20px;
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        background: white;
+    }
+
+    .request-list-wrapper .search-section {
+        width: 100%;
+        height: 35px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .request-list-wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .topic-suggestions-container .suggestions {
+        height: 70%;
+    }
+}
+
+/* request lists  */
+.requests-list-container .request {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.request .left-section {
+    display: flex;
+    width: 90%;
+    height: 60px;
+    align-items: center;
+}
+
+.left-section .request-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background: blue;
+    text-align: center;
+}
+
+.left-section .details-section {
+    flex: 1;
+}
+
+.details-section .details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.details-section .request-question span {
+    font-family: iatlic;
+    font-size: 1.2rem;
+}
+
+.details {
+    flex-wrap: nowrap;
+}
+
+.details .list h6 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.request .right-section {
+    width: 10%;
+    height: 60px;
+    padding: 5px 0;
+}
+
+.request .right-section .join-btn {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.request .right-section .join-btn button {
+    height: 22px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .left-section .request-image {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
+    .details .list {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .details {
+        flex-wrap: wrap;
+    }
+}

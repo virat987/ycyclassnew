@@ -1,0 +1,312 @@
+doctype html
+head
+    include gtag
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='shortcut icon' href='img/ycylogo.png' type='image/x-icon')
+    // Bootstrap CSS
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+    // icon css
+    link(rel='stylesheet' href='assets/elagent-icon/style.css')
+    link(rel='stylesheet' href='assets/animation/animate.css')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='css/responsive.css')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous')
+    title YCY
+
+.body_wrapper
+    include _header
+    section.doc_banner_area_two
+        .b_plus.one(data-parallax='{"x": -10, "y": 80, "rotateY":0}')
+            img(src='img/home_two/plus.png' alt='')
+        .b_plus.two(data-parallax='{"x": -10, "y": 80, "rotateY":0}')
+            img(src='img/home_two/plus_one.png' alt='')
+        .b_round.r_one(data-parallax='{"x": 0, "y": 100, "rotateZ":0}')
+        .b_round.r_two(data-parallax='{"x": -10, "y": 80, "rotateY":0}')
+            img(src='img/home_two/plus.png' alt='')
+        .container
+            .row
+                .col-md-6
+                    .doc_banner_text_two.wow.fadeInLeft
+                        .col-sm-10(style="text-align:center")
+                            h6 We are the 24x7 helping hand.
+                        h2
+                            //- | Solve your Doubts 
+                            //- br 
+                            //- | With 
+                            //- span.typed-text
+                            //- span.cursor &nbsp;
+                            //- br
+                            //- | Live Video call.
+                            | JOIN WITH US ! 
+                        h2 BE A PART OF OUR COMMUNITY ! 
+                        h3 EXPLORE YOUR KNOWLEDGE.
+
+                        form.banner_search_form.search-question-index
+                            input#question.form-control(type="text" placeholder='Search the Knowledge Base')
+                            input#subject.form-control(type="hidden" )
+                            //- button.search_btn(name='submit')
+                            button.search_btn(name='submit')
+                                i.fas.fa-search
+                                
+                        .banner_button
+                            a(href='/one-to-one-classes')
+                                button(style="width:158px;") ONE TO ONE CLASS
+                .col-md-6
+                    .side-img.mt-2.wow.fadeInRight
+                        img.img-fluid(src='img/Frame.png')
+                        
+    section.doc_solution_area.pt-5.mt-5.pb-5
+        .container
+            .row.mt-3
+                //- .col-lg-6.col-md-6
+                    .left_side_vidio.wow.fadeInLeft
+                        .small_section
+                        .small_section2 
+                        img(src='img/dotimg.png')
+                        .vidio
+                            iframe(width='400' height='230' src='https://www.youtube.com/embed/watch?v=A-cTv2QlkPo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                //- .col-lg-6.col-md-6
+                    .about_content.wow.fadeInRight.mt-5
+                        h4 About Us
+                        h2 Welcome To YCY CLASS
+                        p
+                            | We are creating a world wide student teacher community where students can
+                            | found so much benefits in one platform.
+                            | Here they can solve their doubt less than 50 seconds by connecting with our experts and our tutors solve their doubts by well explaining the theory to them.
+                        p  
+                        p 
+                .col-sm-10.offset-sm-1
+                    .about_content.wow.fadeInRight.mt-5(style="text-align:center")
+                        h4 About Us
+                        h2 Welcome To YCY CLASS
+                        p
+                            | We are creating a world wide student teacher community where students can
+                            | found so much benefits in one platform.
+                            | Here they can solve their doubt less than 50 seconds by connecting with our experts and our tutors solve their doubts by well explaining the theory to them.
+                        p  
+                        p 
+                        .banner_button
+                            a(href='/about-us')
+                                button About Us
+    section.doc_solution_area.pt-5.pb-5
+        .container
+            .mini_row
+                .row
+                    .col-md-6.col-lg-6.mt-5
+                        .d-block.ml-auto
+                            h2.color Learn 24×7 With Live Class
+                            br
+                            h4  You have any doubt ?
+                            p  Then clear it by connecting with our experts
+                            h4  Do you want to understand a whole chapter ?
+                            p  Then book a class with our tutors.
+                            .banner_button.ml-0
+                                a(href='/student-call-request')
+                                    button Ask Now
+                    .col-md-6.col-lg-6
+                        img.img-fluid(src='img/Group 2205.png')
+        section.college__section.container-fluid.mt-4.pt-5.pb-5
+            h1 Our Community Tutors From
+        .slider
+            .user-card
+                p Ravenshaw University
+                img(src='img/ravenshaw-logo.jpg' alt='collage logo')
+
+            .user-card
+                p Utkal University
+                img(src='img/utkal-logo.jpg' alt='collage logo')
+                
+            .user-card
+                p Ramadevi University
+                img(src='img/ramadevi-logo.jpg' alt='collage logo')
+               
+            .user-card
+                p IIT Bhubaneswar
+                img(src='img/iit-bbsr-logo.jpg' alt='collage logo')
+              
+            .user-card
+                p BPUT 
+                img(src='img/bput-logo.jpg' alt='BPUT logo')
+               
+            .user-card
+                p NIT Rourkela
+                img(src='img/nit-rourkela.jpg' alt='collage logo')
+                
+            .user-card.py-10
+                p IMI Bhubaneswar
+                img(src='img/iim-bbsr-logo.jpg' alt='collage logo')
+                
+    //- .container-fluid.mt-4.pt-2.pb-5
+    //-     .slider
+    //-         .user-card
+    //-             img(src='img/Group 2196.png' alt='User image')
+    //-             .user-info
+    //-                 div
+    //-                     h3 John Doe
+    //-                     p Science Teacher
+    //-                 button.btn Follow
+    //-             .d-flex.justify-content-between
+    //-                 i.fa.fa-graduation-cap.mt-1(aria-hidden='true')
+    //-                 p 19 Course
+    //-                 i.fa.fa-user-graduate.mt-1
+    //-                 p 25,599 Students
+    //-                 i.fa.fa-star.mt-1
+    //-                 p 4.8
+    //-         .user-card
+    //-             img(src='img/Mask group.png' alt='User image')
+    //-             .user-info
+    //-                 div
+    //-                     h3 John Doe
+    //-                     p Chemistry Teacher
+    //-                 button.btn Follow
+    //-         .user-card
+    //-             img(src='img/Group 2196.png' alt='User image')
+    //-             .user-info
+    //-                 div
+    //-                     h3 John Doe
+    //-                     p Chemistry Teacher
+    //-                 button.btn Follow
+    //-         .user-card
+    //-             img(src='img/Mask group.png' alt='User image')
+    //-             .user-info
+    //-                 div
+    //-                     h3 John Doe
+    //-                     p Chemistry Teacher
+    //-                 button.btn Follow
+    //-         .user-card
+    //-             img(src='img/Group 2196.png' alt='User image')
+    //-             .user-info
+    //-                 div
+    //-                     h3 John Doe
+    //-                     p Chemistry Teacher
+    //-                 button.btn Follow
+    //-         .user-card
+    //-             img(src='img/Mask group.png' alt='User image')
+    //-             .user-info
+    //-                 div
+    //-                     h3 John Doe
+    //-                     p Chemistry Teacher
+    //-                 button.btn Follow
+    section.doc_solution_area.pt-5.pb-5
+        .container
+            .row
+                .col-md-4
+                    .Classes
+                        img.img-responsive(src='img/Group 2183.png')
+                        .classes_content
+                            h4.text-center Ask Your Doubt
+                            p.text-justify
+                                | Are you looking for a right platform to solve your academic doubts ? Yes You got the right place  have any doubt regarding any subject then without any delay ask your doubt and connect with our experts in less than 50 seconds.
+                .col-md-4
+                    .Classes
+                        img.img-responsive(src='img/Group 2184.png')
+                        .classes_content
+                            h4.text-center Assign with teacher
+                            p.text-justify
+                                | After booking a doubt clearing class we will provide you to one of our experts according to your subject then our experts will help you to solve your doubt.
+                .col-md-4
+                    .Classes
+                        img.img-responsive(src='img/Group 2185.png')
+                        .classes_content
+                            h4.text-center Clear your doubts
+                            p.text-justify
+                                | Feel comfortable to ask tutor regarding the doubt.  First of all our experts make you comfortable with them then he will explain you about the theory of your doubts and if necessary then they will give you examples so that you can easily understand and solve your doubts.
+    section.doc_solution_area.pt-5.pb-5
+        .container
+            .row
+                .col-md-6
+                    #wrapper
+                        #style-default.scrollbar
+                            .force-overflow
+                        #style-1.scrollbar
+                            .force-overflow
+                            .review_content.bg-white
+                                .review
+                                    .row
+                                        .col-md-8
+                                            h5.text-white Pravati Prusti
+                                            p.text-white 10th Class Student
+                                        .col-md-4
+                                            img(src='img/users/default.jpg' height="60px" width="60px")(style="border-radius:30px")
+                                p
+                                    | This class helped me solve my physics and chemistry doubts. It is a time saving app..
+                            .review_content.bg-white.mt-4
+                                #review_bg.review
+                                    .row
+                                        .col-md-8
+                                            h5.text-white Asima Priyadarshin
+                                            p.text-white JEE Aspirants
+                                        .col-md-4
+                                            //- img(src='img/Ellipse 2.png')
+                                            img(src='img/users/default.jpg' height="60px" width="60px")(style="border-radius:30px")
+                                p
+                                    | It's a brilliant platform for doubt solving.
+                            .review_content.bg-white.mt-4
+                                .review
+                                    .row
+                                        .col-md-8
+                                            h5.text-white Rakesh Behera
+                                            p.text-white B-TECH Student
+                                        .col-md-4
+                                            //- img(src='img/Ellipse 1.png')
+                                            img(src='img/users/default.jpg' height="60px" width="60px")(style="border-radius:30px")
+                                p
+                                    | It's a greate community for doubt clearing.
+                            .review_content.bg-white.mt-4
+                                #review_bg.review
+                                    .row
+                                        .col-md-8
+                                            h5.text-white Chinmaya Kumar
+                                            p.text-white Science Student
+                                        .col-md-4
+                                            //- img(src='img/Ellipse 2.png')
+                                            img(src='img/users/default.jpg' height="60px" width="60px")(style="border-radius:30px")
+                                p
+                                    | Yes its true that it helped me connect with tutor in just 35 seconds.
+
+                .col-md-6
+                    .mt-4
+                        h2 Whats Our Student Say
+                        p
+                            |  This class helped me solve my physics and chemistry doubts. It is a time saving app.
+                        p
+                            | It's a brilliant platform for doubt solving.
+                        p
+                            | It's a greate community for doubt clearing.
+                        .banner_button.ml-0
+                            a(href='/student-review')
+                                button Review
+    section.doc_fun_fact_area
+        .animated-waves
+            svg.animated-wave(width='100%' height='100%' version='1.1' xmlns='http://www.w3.org/2000/svg')
+                title Wave
+                defs
+                path#animated-wave-three(d='')
+            svg.animated-wave(width='100%' height='100%' version='1.1' xmlns='http://www.w3.org/2000/svg')
+                title Wave
+                defs
+                path#animated-wave-four(d='')
+        .container
+            .row
+                //- .col-lg-3.col-md-3.col-sm-6.wow.fadeInUp
+                //-     .doc_fact_item
+                //-         .counter 5486
+                //-         p Happy Student
+                //- .col-lg-3.col-md-3.col-sm-6.wow.fadeInUp(data-wow-delay='0.2s')
+                //-     .doc_fact_item
+                //-         .counter 642
+                //-         p Cups of Coffee
+                //- .col-lg-3.col-md-3.col-sm-6.wow.fadeInUp(data-wow-delay='0.4s')
+                //-     .doc_fact_item
+                //-         .counter 100
+                //-         p Finished Projects
+                //- .col-lg-3.col-md-3.col-sm-6.wow.fadeInUp(data-wow-delay='0.6s')
+                //-     .doc_fact_item
+                //-         .counter 476
+                //-         p Staff Members
+    include _footer
+    // Back to top button
+    a#back-to-top(title='Back to Top')
+include _js

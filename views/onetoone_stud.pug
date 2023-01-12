@@ -1,0 +1,62 @@
+doctype html
+head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='shortcut icon' href='/img/ycylogo.png' type='image/x-icon')
+    // Bootstrap CSS
+    link(rel='stylesheet' href='/assets/bootstrap/css/bootstrap.min.css')
+    // icon css
+    link(rel='stylesheet' href='/assets/elagent-icon/style.css')
+    link(rel='stylesheet' href='/assets/animation/animate.css')
+    link(rel='stylesheet' href='/css/style.css')
+    link(rel='stylesheet' href='/css/responsive.css')
+    title ycy
+body(data-alert=`${alert ? alert : ''}`)
+    .body_wrapper
+        include _header
+        section.signup_area_2
+            .container
+                .mini_container
+                    .screen(style="background:#dad6d5;height: 665px;width:438px;")
+                        .screen__content
+                            form#form-fill.form.form--student-call.login(style="max-width:350px;margin:auto;")
+                                h3.text-center Describe Your Doubt
+                                hr
+                                .login__field
+                                    i.login__icon.fas.fa-question
+                                    label.login_label(for="desc-topic") Describe About Your Doubt 
+                                    textarea#desc-topic.login_input(placeholder='Describe Your Doubt',rows="7",value="",style="resize:none;" required) 
+                                .login__field
+                                    i.login__icon.fas.fa-filter
+                                    label.login_label(for="select-class-course") Choose Course  
+                                    select#select-class-course.login_input(required,placeholder="Choose Course") 
+                                        option(value='') Select Course
+                                        option(value='6th-8th') 6th-8th
+                                        option(value='9th-10th') 9th-10th
+                                        option(value='Arts') Arts
+                                        option(value='Commerce') Commerce
+                                        option(value='Science') Science
+                                        option(value='JEE/NEET') JEE/NEET
+                                        option(value='UPSC') UPSC
+                                        option(value='OPSC') OPSC
+                                        option(value='SSC') SSC
+                                        option(value='Railway') Railway
+                                        option(value='Banking') Banking
+                                        option(value='NDA') NDA
+                                        option(value='Computer Science') Computer Science
+                                        option(value='Counselling') Counselling
+                                        option(value='Others') Others
+                                .login__field
+                                    i.login__icon.fas.fa-filter
+                                    label.login_label(for="select-subject") Choose Subject 
+                                    select#select-subject.login_input(required,placeholder="Choose Subject") 
+                                        option(value='') Select Subject
+                                button.button.login__submit(style=" background-color: #5791ff;")
+                                    span.button__text Connect With Toutor
+                                    i.button__icon.fas.fa-chevron-right
+        include _footer
+
+
+include _js
+script(src='/js/student.js')
