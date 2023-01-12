@@ -59,8 +59,8 @@ async function uploadFile(filename) {
 function readS3FileServer(req,res) {
     s3.getObject({ Bucket: process.env.BUCKET_NAME, Key: `public${decodeURI(req.path)}` }, (err, fdata) => {
         if (err) {
-            // console.log(err);
-            // console.log(decodeURI(req.path))
+            console.log(err);
+            console.log(decodeURI(req.path))
             res.sendStatus(500);
         } else {
             res.set("Content-Type", fdata.ContentType);
